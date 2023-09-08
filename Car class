@@ -1,6 +1,45 @@
+public class main{
+
+        public static void main(String[] args){
+                public Car myCar = new Car("blue", 4, 30000, 5);
+        }
+}
+
+
 public class Car{
+        private static int numCars = 0;
+
         private String color;
         private int engineCylinders = 4;
-        
+        private Engine engine; 
+        private boolean leatherUpholstry =  false;
+        private double msrp; 
+        private final int NUM_SEATS = 5; 
+
+        public Car(color, numCylinders){
+                numCars++,
+
+                this.color = color; 
+                engine = new Engine(numCylinders);
+                this.msrp = msrp; 
+
+        }
+
+        // Getter, like a bank teller 
+        public double getMsrp(){
+                return msrp;
+        }
+
+        // Setter, .
+
+
+        public boolean toggleDoorLocks(){
+                doorsAreLocked = !doorsAreLocked;
+                return doorsAreLocked; 
+        }
+
 
 }
+        
+
+
